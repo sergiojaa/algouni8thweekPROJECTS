@@ -22,10 +22,29 @@
 
 // Example Output
 
-// ```shell
-// < Your BAC is 0.08
-// < It is not legal for you to drive.
-// ```
+// Prompt the user for inputs
+// let weight = Number(prompt("Enter your weight in pounds:"));
+// let gender = prompt("Enter your gender (male/female):").toLowerCase();
+// let numGlasses = Number(prompt("Enter the number of glasses consumed:"));
+// let amountAlcohol = Number(prompt("Enter the amount of alcohol per glass in ounces:"));
+// let hoursSinceLastDrink = Number(prompt("Enter the number of hours since your last drink:"));
+// let r;
+// if (gender === "male") {
+//     r = 0.73;
+// } else if (gender === "female") {
+//     r = 0.66;
+// } else {
+//     console.log("Invalid gender entered. Please enter 'male' or 'female'.");
+// }
+// let totalAlcohol = numGlasses * amountAlcohol;
+// let BAC = (totalAlcohol * 5.14 / weight * r) - 0.015 * hoursSinceLastDrink;
+
+// console.log(`Your BAC is ${BAC.toFixed(2)}`);
+// if (BAC >= 0.08) {
+//     console.log("It is not legal for you to drive.");
+// } else {
+//     console.log("It is legal for you to drive.");
+// }
 
 // ### პროექტი 36 - Temperature Converter - ტემპერატურის კონვერტაცია
 
@@ -48,6 +67,9 @@
 // < Please enter the temperature in Fahrenheit: 32
 // < The temperature in Celsius is 0.
 // ```
+// const celsius = 30
+// const farenheit = (celsius * 9 / 5 ) + 32
+// console.log(`${celsius} celsius  in farenheit is ${farenheit} farenheit`)
 
 // ### პროექტი 37 - BMI Calculator - სხეულის მასის ინდექსის კალკულატორი
 
