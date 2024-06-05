@@ -91,7 +91,15 @@
 // < Your BMI is 32.5.
 // < You are overweight. You should see your doctor.
 // ```
-
+// let height = 1.20462  //1 sm
+// let weight = 1.2046  // 1kg
+// let bmi = (weight / (height * height))
+// if(bmi >= 18.5 && bmi <= 25){
+//     console.log('wona normashia')
+// }else{
+//     console.log('wona araa normashi')
+// }
+//wona araa normashi
 // ### პროექტი 38 - Multistate Sales Tax Calculator - შტატშორისი გაყიდვების გადასახადის კალკულატორი
 
 // კომპლექსურ პროგრამებს შეიძლება გადაწყვეტილებებში კიდევ სხვა გადაწყვეტილებები ჰქონდეთ ჩაშენებული,
@@ -127,6 +135,23 @@
 // < The total is $200.00.
 // ```
 
+// const amount = Number(prompt('enter the number'))
+// const state = prompt('enter your state')
+// const live = prompt('where do you live in?')
+// let tax = 0
+// let total = 0
+// if(live === 'Illinois'){
+//     tax = 8
+//     total =  tax + amount
+// }else if(live === 'Wisconsin'){
+//     tax = 0.4
+//     total = tax + amount
+// }else if(live !== 'Illinois' && live !== 'Wisconsin'){
+//     tax = 0
+//     total = tax + amount
+// }
+// console.log(`the tax is ${tax} total is ${total}`)
+
 // ### პროექტი 39 - Numbers to Names - რიცხვები სიტყვებში
 
 // ბევრი პროგრამა ინფორმაციას მომხმარებლისთვის ერთი ფორმით აჩვენებს, მაგრამ იყენებს სხვა ფორმას პროგრამის 
@@ -144,7 +169,48 @@
 // ```
 
 // - ამ პროგრამისთვის გამოიყენეთ switch/case statement.
+// const month = Number(prompt('what is the month'))
+// switch(month){
+//     case 1:
+//         console.log('january');
+//         break;
+//     case 2:
+//         console.log('february');
+//         break;
+//     case 3:
+//         console.log('march');
+//         break;
+//     case 4:
+//         console.log('april');
+//         break;
+//     case 5:
+//         console.log('may');
+//         break;
+//     case 6:
+//         console.log('june');
+//         break;
+//     case 7:
+//         console.log('july');
+//         break;
+//     case 8:
+//         console.log('august');
+//         break;
+//     case 9:
+//         console.log('september');
+//         break;
+//     case 10:
+//         console.log('october');
+//         break;
+//     case 11:
+//         console.log('november');
+//         break;
+//     case 12:
+//         console.log('december');
+//         break;
+//         default:
+//         console.log('Invalid month. Please enter a number between 1 and 12.');
 
+// }
 // ### პროექტი 40 - Comparing Numbers - რიცხვების შედარება
 
 // ერთი Input მნიშვნელობის შედარება ცნობილ მნიშვნელობასთან საკმაოდ ხშირია, მაგრამ ასევე ხშირად 
@@ -160,8 +226,25 @@
 // < Enter the third number: 2
 // < The largest number is 51.
 // ```
+// -    
+// Prompt the user for three numbers
+// const num1 = Number(prompt('Enter the first number:'));
+// const num2 = Number(prompt('Enter the second number:'));
+// const num3 = Number(prompt('Enter the third number:'));
 
-// - დაწერეთ ალგორითმი ხელით. ნუ გამოიყენებთ ჩაშენებულ ფუნქციას სიაში ყველაზე დიდი რიცხვის საპოვნელად.
+// if (num1 === num2 || num1 === num3 || num2 === num3) {
+//     console.log('All numbers must be different.');
+// } else {
+//     let bigNumber = num1;
+
+//     if (num2 > bigNumber) {
+//         bigNumber = num2;
+//     }
+//     if (num3 > bigNumber) {
+//         bigNumber = num3;
+//     }
+//     console.log(`The largest number is ${bigNumber}.`);
+// }
 
 // ### პროექტი 41 - Troubleshooting Car Issues - მანქანის პრობლემების მოგვარება
 
@@ -182,3 +265,15 @@
 // < The battery cables may be damaged.
 // < Replace cables and try again.
 // ```
+// const   question1 = prompt('Does your stomach hurt? ')
+// const question2 = prompt('Do your feet hurt?')
+// const question3 = prompt('Does your head hurt?')
+// if(question1 === 'y'){
+//     console.log('drink stomach cure')
+// }
+// if(question2 === 'y'){
+//     console.log('drink feet cure')
+// }
+//     if(question3 === 'y'){
+//     console.log('   drink head cure')
+// }
